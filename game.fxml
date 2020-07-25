@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="rootGridPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #D9F7F0;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.internshala.connectfour.Controller">
+  <columnConstraints>
+    <ColumnConstraints maxWidth="166.0" minWidth="0.0" prefWidth="110.0" />
+    <ColumnConstraints maxWidth="267.0" minWidth="101.0" prefWidth="157.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="132.0" minHeight="10.0" prefHeight="30.0" />
+    <RowConstraints maxHeight="567.0" minHeight="354.0" prefHeight="362.0" />
+  </rowConstraints>
+   <children>
+      <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="2" />
+      <Pane fx:id="insertedDiscsPane" prefHeight="362.0" prefWidth="144.0" GridPane.rowIndex="1" />
+      <VBox prefHeight="200.0" prefWidth="196.0" style="-fx-background-color: #2B3B4D;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Region prefHeight="268.0" prefWidth="2.0" VBox.vgrow="ALWAYS" />
+            <Label fx:id="playerNameLabel" alignment="CENTER" prefHeight="33.0" prefWidth="275.0" text="PLAYER ONE" textFill="#fcf9f9">
+               <font>
+                  <Font name="Arial Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="27.0" prefWidth="284.0" text="TURN" textFill="#f8f6f6">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Region prefHeight="126.0" prefWidth="196.0" />
+         </children>
+      </VBox>
+   </children>
+</GridPane>
